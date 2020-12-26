@@ -1,0 +1,25 @@
+es:
+  activerecord:
+    attributes:
+      contact:
+        first_name: "Primer nombre"
+        last_name: "Apellido"
+        message: "Mensage"
+  send_us_a_message: "Envíanos un mensaje"
+  tell_us_your_name: "Díganos su nombre"
+  first_name: "Primer nombre"
+  last_name: "Apellido"
+  enter_your_email: "INTRODUZCA SU CORREO ELECTRÓNICO"
+  enter_phone_number: "INTRODUZCA NÚMERO DE TELÉFONO"
+  message: "MENSAJE"
+  address: "alocución"
+  lets_talk: "Hablemos"
+  general_support: "Soporte general"
+  send_message: "Enviar mensaje"
+  type_first_name: "Escriba el nombre"
+  type_last_name: "Escriba el apellido"
+  message_is_required: "El mensaje es obligatorio"
+  valid_email_required: "Se requiere un correo electrónico válido: ex@abc.xyz"
+  invalid_email: "El correo electrónico no es válido, el formato obligatorio es: ex@abc.xyz"
+  message_sent: "¡Mensaje enviado! Gracias por contactarnos."
+  write_us_a_message: "Escríbenos un mensaje"
