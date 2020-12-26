@@ -23,3 +23,8 @@ es:
   invalid_email: "El correo electrónico no es válido, el formato obligatorio es: ex@abc.xyz"
   message_sent: "¡Mensaje enviado! Gracias por contactarnos."
   write_us_a_message: "Escríbenos un mensaje"
+  title_404: "La página que buscaba no existe (404)"
+  page_not_found: "La página que buscaba no existe."
+  mistyped_address: "Es posible que haya escrito mal la dirección o que la página se haya movido."
+  ower_404: "Si es el propietario de la aplicación, consulte los registros para obtener más información."
+  app_title: "Contáctenos"

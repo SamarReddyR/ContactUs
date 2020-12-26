@@ -23,3 +23,8 @@ en:
   invalid_email: "Email is invalid, required format is : ex@abc.xyz"
   message_sent: "Message sent! Thank you for contacting us."
   write_us_a_message: "Write us a message"
+  title_404: "The page you were looking for doesn't exist (404)"
+  page_not_found: "The page you were looking for doesn't exist."
+  mistyped_address: "You may have mistyped the address or the page may have moved."
+  ower_404: "If you are the application owner check the logs for more information."
+  app_title: "ContactUs"
