@@ -1,3 +1,9 @@
+# Contact Us
+
+Submits the contact us form and mails the data to 'info@ajackus.com'. And aslo support the internationalization with two languages (English and Spanish).
+
+Application is deployed on heroku, visit https://contact-us-assignment.herokuapp.com.
+
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -6,19 +12,43 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+  * 2.6.6
+* Rails version
+  * 6.0.3.4
+* Steps to run the application in local
+  * Clone the code into local
 
-* System dependencies
+    * `git clone https://github.com/SamarReddyR/ContactUs.git`
+  * Install Gems
 
-* Configuration
+    * `bundle install`
+  * Setup `config/database.yml` file with username and password in development mode as below.
 
-* Database creation
+    ```
+    default: &default
+      adapter: mysql2
+      username: USERNAME
+      password: PASSWORD
 
-* Database initialization
+    development:
+      <<: *default
+      database: ContactUs_development
+    ```
+  * Create Database
 
-* How to run the test suite
+    * `rake db:create`
+  * Database initialization
 
-* Services (job queues, cache servers, search engines, etc.)
+    * `rake db:migrate`
+  * Setup Environment
 
-* Deployment instructions
+    * Run following commands
+      * `set EDITOR=notepad`
+      * `rails credentials:edit`
+    * Set Config vars (change the MailID and GmailPASSWORD with valid details)
+      * `GMAIL_USERNAME: MailID`
+      * `GMAIL_PASSWORD: GmailPASSWORD`
+    * Now save the file and close it.
+  * Start Server
 
-* ...
+    * `rails s`
