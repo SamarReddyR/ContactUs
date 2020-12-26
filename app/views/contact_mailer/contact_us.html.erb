@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+#contact-details {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+#contact-details td, #contact-details th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  min-width: 150px;
+  max-width: 500px;
+  overflow-wrap: anywhere;
+}
+
+#contact-details tr:nth-child(even){background-color: #f2f2f2;}
+
+#contact-details tr:hover {background-color: #ddd;}
+
+#contact-details th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  width: 130px;
+}
+</style>
+</head>
+<body>
+<% if @contact %> 
+
+  <h2> Got a new Message!</h2>
+
+  <table id="contact-details">
+    <tr>
+      <th>First name</th>
+      <td><%= @contact.first_name %></td>
+    </tr>  
+    <tr>
+      <th>Last name</th>
+      <td><%= @contact.last_name %></td>
+    </tr> 
+    <tr>
+      <th>Email</th>
+      <td><a href="mailto:<%= @contact.email %>"><%= @contact.email %></a></td>
+    </tr>
+    <% unless @contact.phone_number.blank? %> 
+      <tr>
+        <th>Phone</th>
+        <td><%= @contact.phone_number %></td>
+      </tr> 
+    <% end %>
+    <tr>
+      <th>Message</th>
+      <td><%= @contact.message %></td>
+    </tr> 
+  </table>
+<% end %>
+</body>
+</html>
