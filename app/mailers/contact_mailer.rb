@@ -4,6 +4,6 @@ class ContactMailer < ApplicationMailer
 
   def contact_us
     @contact = params[:contact]
-    mail to: 'r.samarreddy@gmail.com', subject: 'Contact Us - Got a new Mssage!'
+    mail to: 'info@ajackus.com', subject: 'Contact Us - Got a new Mssage!'
   end
 end
