@@ -21,6 +21,18 @@
   </head>
 
   <body>
+    <% if flash.notice %>
+      <div class="alert alert-info">
+        <%= flash.notice %>
+      </div>
+    <% end %>
+    <% unless flash[:errors].blank? %>
+      <% flash[:errors].each do |msg| %>
+        <div class="alert alert-danger">
+          <%= msg %>
+        </div>
+      <% end %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
